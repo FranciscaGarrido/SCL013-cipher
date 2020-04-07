@@ -1,14 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>💌 Secretos de parejas 💌</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section id="root">
+        <div id="title">
+            <h1 class="tituloPpal">🙊 Secretos de parejas 🙊</h1>
+        </div>
+
+        <h2 class="textoBienv">Cifra y descifra mensajes</h2>
+        <p class="textoExplicacion">
+            Esta aplicación web es para que tu y tu pareja puedan escribir y descifrar sus mensajes secretos <br>
+            Para esto usamos:
+        </p>
+
+        <button id="btnModal">Cifrado césar</button>
+        <div id="tvesModal" class="modalContainer">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <h2 class="textoBienv">¿Qué es cifrado césar?</h2>
+                <p style="font-family: 'Roboto Condensed', sans-serif;color: #4a4141;">
+                    El cifrado César consiste en sustituir cada letra del abecedario por una letra desplazada un número
+                    determinado de posiciones
+                    . Por ejemplo, si desplazamos 1 posición, reemplazaríamos la letra A con la B, la B con la C, y así
+                    sucesivamente
+                    hasta sustituir la Z por la A.</p>
+                <img
+                    src="https://4.bp.blogspot.com/-UMVVBa7YfRU/VeK4jFgokgI/AAAAAAAAAfo/YPVB0N-72BQ/s1600/cifrador_cesar%2Bcopia.png">
+            </div>
+        </div>
+
+        <form action="menu.html" id="form_user">
+            <h4 class="textoBienv">¡Ingresa tus datos para comenzar!</h4>
+
+            <h5 class="textoExplicacion" style="font-weight: 500;">Ingresa tu nombre:</h5>
+            <input type="text" id="user1" class="couple_names" placeholder="Tu nombre aquí">
+
+            <h5 class="textoExplicacion" style="font-weight: 500;">Ingresa el nombre de tu pareja:</h5>
+            <input type="text" id="user2" class="couple_names" placeholder="El nombre de tu pareja aquí">
+
+            <!-- ALERTA DE INPUT VACIOS -->
+            <div id="name_alert" style="display: none" class="alert alert-danger" role="alert">
+                ¡No has ingresado los nombres!
+            </div>
+
+            <button id="save_user_btn" class="btn btn-primary" type="button" style="margin-top: 20px;">Entrar</button>
+        </form>
+    </section>
+    <script src="index.js"></script>
+    <script src="cipher.js"></script>
+</body>
+
 </html>

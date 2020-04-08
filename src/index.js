@@ -26,7 +26,8 @@ let greetings = document.getElementById("greetings")
 if (greetings != null) {
 	window.addEventListener("load", () => {
 		let sayHi = document.getElementById("say_hi");
-		sayHi.innerHTML = "Hola, " + localStorage.getItem("name1");
+		let nombreSaludo = localStorage.getItem("name1");
+		sayHi.innerHTML = "¡Hola, " + nombreSaludo + "!";
 	})
 }
 

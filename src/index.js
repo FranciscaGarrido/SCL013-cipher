@@ -1,5 +1,7 @@
 // SALUDO
 
+// import cipher from './cipher.js';
+
 let saveUsersBtn = document.getElementById("save_user_btn")
 if (saveUsersBtn != null) {
 	saveUsersBtn.addEventListener("click", () => {
@@ -13,7 +15,7 @@ if (saveUsersBtn != null) {
 		}
 		else {
 			let nameAlert = document.getElementById("name_alert")
-			nameAlert.style.display = "block"
+			nameAlert.style.display = "block";
 		}
 	})
 }

@@ -1,5 +1,5 @@
 // Importamos el objeto `cipher`, que contiene los métodos `encode` y `decode`
-import cipher from '../src/cipher';
+import cipher from 'SCL013-cipher/src/cipher';
 
 describe('cipher', () => {
 
@@ -27,6 +27,7 @@ describe('cipher', () => {
 
     test('should return "ABCDEFGHIJKLMNOPQRSTUVWXYZ" for "HIJKLMNOPQRSTUVWXYZABCDEFG" with offset 33', () => {
       //completa este test!
+      expect(cipher.decode(33,"HIJKLMNOPQRSTUVWXYZABCDEFG")).toBe("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
     });
 
   });

@@ -24,3 +24,5 @@ window.cipher = {
 	}
 
 }
+
+// export default cipher

@@ -11,11 +11,15 @@
 
 </head>
 
-<body>
+<body id="greetings">
     <section id="root">
         <div id="title">
             <h1 class="tituloPpal">🙊 Secretos de parejas 🙊</h1>
         </div>
+
+        <h2 id="say_hi" class="textoBienv" style="font-size: 30px;"></h2>
+        <p class="textoExplicacion">Decide si quieres crear un mensaje oculto o descifrar el mensaje oculto de tu pareja.
+        </p>
 
         <div class="contenido">
         <div class="container1" id="con1">
@@ -33,7 +37,7 @@
             </div>
             <div>
                 <!--boton codficar-->
-                <input type="submit" class="button" name="enviar1" id="enviar1" value="Codificar">
+                <input type="submit" class="button" name="send1" id="send1" value="Codificar">
             </div>
             <div>
                 <textarea class="codificado1" name="codificado1" id="codificado1" cols="30" rows="10" readonly
@@ -67,9 +71,9 @@
             </div>
             <!---boton decodificar-->
             <div>
-                <input type="submit" class="button" name="enviar2" id="enviar2" value="Decodificar">
+                <input type="submit" class="button" name="send2" id="send2" value="Decodificar">
             </div>
-            <!---caja con codigo listo-->
+
             <div>
                 <textarea class="codificado2" name="codificado2" id="codificado2" cols="30" rows="10" readonly
                     placeholder="Tu mensaje descifrado"></textarea>

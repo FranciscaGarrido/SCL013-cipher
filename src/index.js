@@ -62,27 +62,27 @@ if (document.getElementById("btnModal")) {
 
 	window.onload = function(){
 		/*Estas variables enlasan al boton codificar y decodificar*/
-			const btnEncode = document.getElementById("enviar1");
-			const btnDecode = document.getElementById("enviar2");
+			const btnEncode = document.getElementById("send1");
+			const btnDecode = document.getElementById("send2");
 		/*y estas enlazan al textarea readonly*/
 			const textoEn = document.getElementById("codificado1");
 			const textoDe = document.getElementById("codificado2");
 		
-		/*caracteristicas del btnEncode*/
+		/*btnEncode*/
 			btnEncode.addEventListener('click', () => {
 				
 				let ingresoEn = document.getElementById("codificar1").value;
-				let desplaza = document.getElementById("desplazamiento").value;
-				let send = window.cipher.encode(ingresoEn,desplaza);
+				let offset = document.getElementById("desplazamiento").value;
+				let send = window.cipher.encode(ingresoEn,offset);
 				textoEn.innerHTML = send;
 			})
 
-		/*Caracteristicas del btnDecode*/ 
+		/*btnDecode*/ 
 			btnDecode.addEventListener('click', () => {
 			
 				let ingresoDe = document.getElementById("codificar2").value;
-				let desplaza = document.getElementById("desplazamiento").value;
-				let send = window.cipher.decode(ingresoDe,desplaza);
+				let offset = document.getElementById("desplazamiento").value;
+				let send = window.cipher.decode(ingresoDe,offset);
 				textoDe.innerHTML = send;
 			})
 		

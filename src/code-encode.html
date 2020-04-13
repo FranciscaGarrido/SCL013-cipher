@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>💌 Secretos de parejas 💌</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section id="root">
+        <div id="title">
+            <h1 class="tituloPpal">🙊 Secretos de parejas 🙊</h1>
+        </div>
+
+        <div class="contenido">
+        <div class="container1" id="con1">
+
+            <div>
+                <h4 class="textoBienv">Codificar</h4>
+            </div>
+
+            <p class="textoExplicacion">Para poder codificar necesitas un número clave, que podrá hacer que cada mensaje que escribas sea distinto. <br>
+            </p>
+
+            <div>
+                <textarea class="codificar1" name="codificar1" id="codificar1" cols="30" rows="10"
+                    placeholder="Escribe tu mensaje secreto aquí"></textarea>
+            </div>
+            <div>
+                <!--boton codficar-->
+                <input type="submit" class="button" name="enviar1" id="enviar1" value="Codificar">
+            </div>
+            <div>
+                <textarea class="codificado1" name="codificado1" id="codificado1" cols="30" rows="10" readonly
+                    placeholder="Tu mensaje cifrado"></textarea>
+            </div>
+
+        </div>
+
+        <div class="container3" id="con3">
+
+            <div>
+                <h4 class="textoBienv">Elegir clave</h4>
+            </div>
+            <div>
+                <input type="number" name="desplazamiento" id="desplazamiento" min="1" max="100" value="1"></input>
+            </div>
+
+        </div>
+
+        <div class="container2" id="con2">
+
+            <div>
+                <h4 class="textoBienv">Decodificar</h4>
+            </div>
+
+            <p class="textoExplicacion">¿Qué mensaje oculto te envió tu pareja?
+                Aquí podrás descifrar su mensaje oculto. ¡Sólo necesitas conocer el número clave que usó!</p>
+            <div>
+                <textarea class="codificar2" name="codificar2" id="codificar2" cols="30" rows="10"
+                    placeholder="Escribe tu mensaje a descifrar aquí"></textarea>
+            </div>
+            <!---boton decodificar-->
+            <div>
+                <input type="submit" class="button" name="enviar2" id="enviar2" value="Decodificar">
+            </div>
+            <!---caja con codigo listo-->
+            <div>
+                <textarea class="codificado2" name="codificado2" id="codificado2" cols="30" rows="10" readonly
+                    placeholder="Tu mensaje descifrado"></textarea>
+            </div>
+
+        </div>
+    </div>
+    <form action="index.html">
+        <button type="submit" class="btn btn-primary" id="back_index"> 🡸 Volver atrás</button>
+    </form>
+
+    </section>
+    <script src="index.js"></script>
+    <script src="cipher.js"></script>
+</body>
+
+</html>

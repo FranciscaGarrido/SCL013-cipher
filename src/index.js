@@ -1,7 +1,3 @@
-/* import cipher from './cipher.js';
-
-console.log(cipher); */
-
 // SALUDO
 
 let saveUsersBtn = document.getElementById("save_user_btn")
@@ -26,8 +22,7 @@ let greetings = document.getElementById("greetings")
 if (greetings != null) {
 	window.addEventListener("load", () => {
 		let sayHi = document.getElementById("say_hi");
-		let nombreSaludo = localStorage.getItem("name1");
-		sayHi.innerHTML = "¡Hola, " + nombreSaludo + "!";
+		sayHi.innerHTML = "Hola, " + localStorage.getItem("name1");
 	})
 }
 
@@ -62,3 +57,34 @@ if (document.getElementById("btnModal")) {
 		}
 	}
 }
+
+// CIFRADO CESAR
+
+	window.onload = function(){
+		/*Estas variables enlasan al boton codificar y decodificar*/
+			const btnEncode = document.getElementById("enviar1");
+			const btnDecode = document.getElementById("enviar2");
+		/*y estas enlazan al textarea readonly*/
+			const textoEn = document.getElementById("codificado1");
+			const textoDe = document.getElementById("codificado2");
+		
+		/*caracteristicas del btnEncode*/
+			btnEncode.addEventListener('click', () => {
+				
+				let ingresoEn = document.getElementById("codificar1").value;
+				let desplaza = document.getElementById("desplazamiento").value;
+				let send = window.cipher.encode(ingresoEn,desplaza);
+				textoEn.innerHTML = send;
+			})
+
+		/*Caracteristicas del btnDecode*/ 
+			btnDecode.addEventListener('click', () => {
+			
+				let ingresoDe = document.getElementById("codificar2").value;
+				let desplaza = document.getElementById("desplazamiento").value;
+				let send = window.cipher.decode(ingresoDe,desplaza);
+				textoDe.innerHTML = send;
+			})
+		
+		
+		}

@@ -47,7 +47,7 @@ Para  [este link] ()
 
 ![indexpage](/src/index.PNG)
 
--Luego de hacer el prototipo de baja fidelidad realizmamos otro de alta fidelidad, en inVision, el cuál tiene más -interacción, así fue más fácil poder conocer como se sentía nuestro usuario objetivo.
+-Luego de hacer el prototipo de baja fidelidad realizmamos otro de alta fidelidad, en inVision, el cuál tiene más -interacción, así fue más fácil poder conocer como se sentía nuestro usuario objetivo de acuerdo a los botones, -contraste de color y la posición de lo elementos de nuestra aplicación web.
 
 Para  [este link] ()
 

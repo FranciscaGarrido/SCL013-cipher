@@ -1,6 +1,6 @@
 # Secretos de parejas
 
-![indexpage](/src/index.PNG)
+![indexpage](/src/index.jpeg)
 
 -Esta aplicación brinda privacidad a las parejas que desean establecer una comunicación más segura de lo habitual,-en Secretos de parejas les damos a los enamorados la solución que buscan, el usuario podrá elegir un número clave -que hará único cada mensaje.
 
@@ -47,7 +47,7 @@ Planificación en el trablero de [Trello] (https://trello.com/b/nt1M2L8Y/proyect
 
 -Hicimos un prototipo de baja fidelidad (sketch en papel) y se lo presentamos a nuestras compañeras y coachs de -Laboratoria, para que nos dieran feedback y nos contaran su experiencia con este prototipo.
 
-![indexpage](/src/sketch.PNG)
+![indexpage](/src/sketch.jpeg)
 
 -Luego de hacer el prototipo de baja fidelidad realizamos otro de alta fidelidad, en inVision (para verlo click [aquí] (https://franciscagarrido570295.invisionapp.com/console/Cipher-ck8fvjjxo0bka01a1upejh9hz/ck8fyplc10ctb019kkzlnnccv/play?v=Z8nctc1ZzEa1DXeU9znNiQ%3D%3D&linkshare=urlcopied#proje
 From 3-Francisca Garrido to Everyone:  10:50 AM

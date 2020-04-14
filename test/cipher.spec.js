@@ -1,5 +1,5 @@
 // Importamos el objeto `cipher`, que contiene los métodos `encode` y `decode`
-import cipher from 'SCL013-cipher/src/cipher';
+import cipher from '../src/cipher';
 
 describe('cipher', () => {
 
@@ -10,10 +10,11 @@ describe('cipher', () => {
   describe('cipher.encode', () => {
 
     test('should be a function', () => {
-      expect(typeof cipher.encode).toBe('function');
+      expect(typeof window.cipher.encode).toBe('function');
     });
     test('should return "HIJKLMNOPQRSTUVWXYZABCDEFG" for "ABCDEFGHIJKLMNOPQRSTUVWXYZ" with offset 33', () => {
       //completa este test!
+      expect(window.cipher.encode(33,"HIJKLMNOPQRSTUVWXYZABCDEFG")).toBe("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
     });
 
     
@@ -22,12 +23,12 @@ describe('cipher', () => {
   describe('cipher.decode', () => {
 
     test('should be a function', () => {
-      expect(typeof cipher.decode).toBe('function');
+      expect(typeof window.cipher.decode).toBe('function');
     });
 
     test('should return "ABCDEFGHIJKLMNOPQRSTUVWXYZ" for "HIJKLMNOPQRSTUVWXYZABCDEFG" with offset 33', () => {
       //completa este test!
-      expect(cipher.decode(33,"HIJKLMNOPQRSTUVWXYZABCDEFG")).toBe("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+      expect(window.cipher.decode(33,"HIJKLMNOPQRSTUVWXYZABCDEFG")).toBe("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
     });
 
   });

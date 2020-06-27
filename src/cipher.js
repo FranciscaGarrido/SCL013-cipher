@@ -8,7 +8,7 @@ window.cipher = {
 			let posAscii = posText - 65 + offset % 26 + 65;
 			listo = listo + String.fromCharCode(posAscii); // en esta funcion se da la letra segun la posc. en ascii
 		}//devuelve el texto codificado
-		return listo; 
+		return listo;
 	},
 // desplazamiento hacia atras
 	decode: (ingresoDe, offset) => {
@@ -18,7 +18,7 @@ window.cipher = {
 		for (let i = 0; i < ingresoDe.length; i++) { //recorre letras
 			let posText2 = ingresoDe.charCodeAt(i);//se para guarda la posc. de la letra en ascii
 			let posAscii2 = posText2 - 65 - offset % 26 + 65;
-			listo2 = listo2 + String.fromCharCode(posAscii2); // en esta funcion se da la letra segun la posc. en ascii 
+			listo2 = listo2 + String.fromCharCode(posAscii2); // en esta funcion se da la letra segun la posc. en ascii
 		}
 		return listo2;
 	}

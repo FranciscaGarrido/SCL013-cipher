@@ -1,6 +1,6 @@
 # Secretos de parejas
 
-![indexpage](/src/index.PNG)
+![indexpage](https://i.ibb.co/yRcC0PL/index.png)
 
 Esta aplicación brinda privacidad a las parejas que desean establecer una comunicación más segura de lo habitual,-en Secretos de parejas les damos a los enamorados la solución que buscan, el usuario podrá elegir un número clave -que hará único cada mensaje.
 
@@ -11,7 +11,7 @@ Para acceder a la aplicación click a [este link](https://franciscagarrido.githu
 
 Instrucciones de uso 
 
-* Ingresar nombres (el del usuario y el de su pareja) y apretar botón "Entrar"
+* Ingresar nombres (el del usuario y el de su pareja) y apretar botón "Entrar".
 
 ### Codificar: 
 * Escribir el mensaje que se desea codificar.
